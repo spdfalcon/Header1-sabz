@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: red;
+    height: 90vh;
+}
+.container__title{
+    position: absolute;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 40%;
+    right: 43%;
+    background: linear-gradient(to right, #1f1bd8 45%, #cac8c8 30%) ;
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 90vh;
+}
+
+.left{
+    background-color: brown;
+    grid-column: 1/4;
+    background-image: url("books-1655783_1920.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+
+.right{
+    background-color:#222121;
+    grid-column: 4/7;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    
+}
+
+.right__title{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 5rem;
+    
+}
+.right__paragraph{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.right__btn{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 1rem 0.2rem 1rem 0.2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    color: white;
+    background-color: #1f1bd8;
+    transition: 0.3s;
+    border: none;
+}
+
+.right__btn:hover{
+    background-color: white;
+    color: #1f1bd8;
+}
